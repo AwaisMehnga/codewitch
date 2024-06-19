@@ -1,8 +1,31 @@
-# React + Vite
+## Codewitch: Design-to-Code with Gemini and React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project, Codewitch, allows you to convert UI designs into functional React code using the Gemini API.
 
-Currently, two official plugins are available:
+**Author:** awaismehnga (awaismehnga on GitHub)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Features:**
+
+- Seamless integration with Gemini API for design parsing.
+- Automatic code generation for React components.
+- Simplifies the process of converting UI mockups to functional code.
+
+**Tech Stack:**
+
+- Frontend: React.js
+- Design Parsing: Gemini API
+
+**Getting Started**
+
+**Prerequisites:**
+
+- Node.js and npm (or yarn) installed on your system.
+- A Gemini account with API access.
+
+**Installation:**
+
+1. Clone the repository:
+
+   ```bash
+   git clone [https://github.com/awaismehnga/codewitch.git](https://github.com/awaismehnga/codewitch.git)
+   ```
