@@ -48,7 +48,7 @@ export default function AI() {
   const framework = "Regular CSS use flex grid etc"; //define any framework required
 
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyCIhTfwcnMHKMJ7T4dc72_SQlbe4s-8hnI"
+    "AIzaSyBSl2C4Jax2_yEJ_2CpAsjrhcKapT3UfMo"
   );
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-pro-latest",
