@@ -59,12 +59,19 @@ export default function AI() {
 
   // send message to AI
   async function send_message(textprompt, imageData) {
-    const result = await chat.sendMessageStream([textprompt, imageData]);
-    let compiled = "";
-    for await (const chunk of result.stream) {
-      const chunkText = chunk.text();
-      compiled += chunkText;
-      setCompiledResponse(compiled);
+    try {
+      const result = await chat.sendMessageStream([textprompt, imageData]);
+      let compiled = "";
+
+      for await (const chunk of result.stream) {
+        const chunkText = chunk.text();
+        compiled += chunkText;
+        setCompiledResponse(compiled);
+      }
+    } catch (error) {
+      if (error.message.includes("[429 ]")) {
+        alert("Request limit exceeded, please try Tomorrow.");
+      }
     }
     return compiled;
   }
